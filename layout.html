@@ -1,0 +1,164 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .nav-link{
+    color:#157347 !important;
+    font-size: 17px;
+    font-weight: 400;
+  }
+  .homepage {
+    margin-top: 20px;
+  }
+  .addSpace{
+    margin-left:250px;
+  }
+  .modal-dialog{
+    margin-top: 50px;
+  }
+  .homeContent{
+    padding: 30px;;
+  }
+  .homeDetail{
+    padding: 30px;
+    background-color: rgb(246, 246, 246);
+  }
+  .subTitle{
+    border-bottom: 1px solid rgba(3, 40, 44, 0.2);
+    font-size: 13px;
+  }
+  .featuresSec2 img{
+    margin-left: 70px;
+  }
+  .homeDetail a{
+    text-decoration: none;
+    color: black;
+  }
+  #logo{
+    color: #138f1a;
+    font-family: fantasy;
+  }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+         $('#homeFeatures').on('click',function() {
+              $('#sel-homeModal').modal('show');
+         });
+        </script>
+    </head>
+    <body>
+       <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <!-- Left-aligned section -->
+              <a class="navbar-brand" href="/home.html" id="logo">RECOG360</a>
+              
+              <!-- Center-aligned section -->
+              <div class="navbar-collapse collapse justify-content-center">
+                <ul class="navbar-nav">
+                  <li class="nav-item" id="homeFeatures">
+                    <a class="nav-link active addSpace" aria-current="page" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link addSpace" href="/plans.html">Plans</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link addSpace" href="#">About</a>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- Right-aligned section -->
+              <div class="navbar-collapse collapse justify-content-end">
+                <ul class="navbar-nav">
+                  <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Sign in</a>
+                  </li> -->
+                  <li class="nav-item">
+                    <button type="button" id="talkToUs" class="btn btn-success"><a href="/talkToUs.html">Talk to Us</a></button>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- Navbar toggle button -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+        </nav>
+       </header>
+       <main>
+        <!-- Home Nav -->
+<div class="modal homepage" id="sel-homeModal">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+          <div class="row featuresSec1">
+              <div class="col-md-4 homeContent">
+                <div>
+                  <img src="https://d2pas86kykpvmq.cloudfront.net/images/humans-3.0/pose_32-p-800.png" width="300px">
+                  <p>RECOG360 IDV Platform</p>
+                  <p>Prevent fraud, build trust, and get more verified customers faster with RECOG360’s identity verification solution. Fine tune it for your business.</p>
+                </div>
+              </div>
+              <div class="homeDetail col-md-8">
+                <div class="subTitle">
+                  <span> IDENTITY VERIFICATION</span>
+                 </div>
+                <div class="row my-5">
+                  <div class="col-md-6">
+                    <img src="img\id-card.png" width="30px">
+                    <a class="fs-5" href="/faceRecognition.html">Face Recognition</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img\liveness-detection.png" width="30px">
+                    <span class="fs-5">Liveness Detection</span>
+                  </div>
+                </div>
+                <div class="row my-4">
+                  <div class="col-md-6">
+                    <img src="img\database-check.png" width="30px">
+                    <a href="/IDVerification.html" class="fs-5">ID Verification</a>
+                  </div>
+                  <div class="col-md-6">
+                    <img src="img\verified.png" width="30px">
+                    <span class="fs-5">Optical Character Recognition</span>
+                  </div>
+                </div>
+                <br>
+                <br>
+                <div class="row featuresSec2">
+                  <div class="col-md-4 my-2">
+                    <div class="my-4">
+                      <p class="subTitle">KNOW YOUR CUSTOMER</p>
+                      <img src="img\verified.png" width="30px">
+                      <p class="fs-5 my-2">KYC Onboarding</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 my-2">
+                    <div class="my-4">
+                      <p class="subTitle">BIOMETRIC VERIFICATION</p>
+                      <img src="img\suspect.png" width="30px">
+                      <p class="fs-5 my-2">Biometric Authentication</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4 my-2">
+                    <div class="my-4">
+                      <p class="subTitle">FRAUD MITIGATION</p>
+                      <img src="img\identity-theft.png" width="30px">
+                      <p class="fs-5 my-2">Fraud Protection</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+       </main>
+       <footer>
+
+       </footer>
+    </body>
+</html>
